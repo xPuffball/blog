@@ -74,6 +74,8 @@ def is_valid_hint(hint: str, board_words: set) -> bool:
 
 This function checks if the hint is a stop word or overlaps with board words. We can't have the AI giving "dog" as a hint for "dog." (because that's just cheating!)
 
+**It was at this point I realized that just using cosine similarity was a bad idea... so I added some more stuff!**
+
 We also implemented an ambiguity check to avoid proper nouns:
 
 ```python
