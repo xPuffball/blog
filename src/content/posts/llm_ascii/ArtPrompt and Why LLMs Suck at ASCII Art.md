@@ -10,7 +10,6 @@ draft: false
 
 Large Language Models have been doing a pretty good job of knocking down challenge after challenge in areas both expected and not. From writing poetry to generating entire websites from questionably... drawn images, these models seem almost unstoppable (and dire for my future career prospects). But there's one quirky and zany corner of the digital world where even the most muscular LLMs, who've ingested enough data to DEFINITELY give them some form of digital heartburn, stumble: ASCII art. And trust me, it's not just about giving them giving me their best eldritch renditions of my pretty simple request for an ASCII dog - this limitation has some surprisingly serious implications.
 ## The Art of Failing
----
 Let's start with something simple. Ask ChatGPT, or any LLM to draw you a simple house in ASCII art, and you might end up with something like this:
 
 ```
@@ -34,13 +33,11 @@ Original:    Modified:
 
 Yes, that's supposed to be sunglasses. No, I don't know why the smiley face has decided to throw a surprise left jab. The point is that language models are pretty bad at producing, modifying, and interpreting (this is important!) ASCII art.
 ## Why LLMs Struggle with ASCII Art
----
 ![image](./blog2_tiger.png)
 *is that the robot from wall-e?*
 
 The root of this incompetence lies in how LLMs fundamentally process information. To really understand why these models fumble so hard with ASCII art, we need to think more about their architecture and training process.
 ### The Tokenization Problem
----
 LLMs (and other ML NLP models) process text through tokenization - breaking down input into smaller units. Let's look at how this affects the model's understanding. When we feed an ASCII art piece into an LLM, it processes it character by character, losing the "big picture":
 
 ```python
@@ -74,7 +71,6 @@ ascii_house = """
 The problem becomes pretty immediately apparent. While regular text maintains its semantic meaning when broken into tokens, ASCII art loses its spatial relationships - basically the thing that gives it meaning.  LLMs are fundamentally trained to process and generate natural language. While we don't have detailed information about the exact composition of their training data, their architecture mean they're optimized for processing sequential text rather than spatial arrangements of characters. This architectural focus on sequential processing contributes to what we might call "spatial blindness" - the model's difficulty in interpreting 2D information that's encoded in a 1D format.
 
 ### Attention is (not?) All You Need
----
 Modern LLMs use attention mechanisms to understand relationships between different parts of the input. As shown in the seminal "Attention is All You Need" paper (Vaswani et al., 2017), these mechanisms compute attention weights between all pairs of tokens in a sequence. While this works pretty very good for natural language, it falls apart with ASCII art, as we'll see in "ArtPrompt: ASCII Art-based Jailbreak Attacks against Aligned LLMs" (Jiang et al., 2024).
 
 Let's just take a look at how self-attention operates. In a standard transformer architecture:
@@ -112,7 +108,6 @@ So now we see the **problem**: Characters that should be spatially related (e.g.
 
 Despite advances in transformer architectures and attention mechanisms, the fundamental limitation remains: LLMs are inherently biased toward processing sequential information rather than spatial patterns. This creates an inherent blindspot when dealing with ASCII art and similar 2D text representations. 
 ## Stealing With Art(Prompt)
----
 ![image](./blog2_artprompt.png)
 *from ArtPrompt: ASCII Art-based Jailbreak Attacks against Aligned LLMs" (Jiang et al., 2024.)*
 
@@ -170,7 +165,6 @@ Their experimental results against existing defense mechanisms showed (this is a
 
 Unlike other jailbreak methods such as GCG that require hundreds of optimization iterations, ArtPrompt requires only a single pass.
 ### An Example
----
 We'll now look at a sanitized example of how this attack works in practice. Consider these two prompts:
 
 1. Direct prompt (Rejected):
@@ -200,14 +194,12 @@ The researchers found that this technique (not exactly as above, but similar) ac
 | Gemini | 6% success      | 76% success       |
 
 ### The Implications
----
 The researchers' experiments with fine-tuning showed that models could improve at ASCII recognition - they achieved an increase from 10.26% to 71.54% accuracy through fine-tuning on the VITC dataset. 
 
 Their experiments also revealed clear patterns in model performance based on scale. Larger models performed better at the recognition task, with GPT-4 achieving 25.19% accuracy compared to Llama2-7B's 1.01%.
 
 The implications are significant. While it's really funny to see chatbots proudly produce horrific pieces of art like a 7 year old with unsupervised access to their cousin's expensive art supplies, it's about fundamental security vulnerabilities in AI systems that we're increasingly relying on for content moderation and security.
 ## Forward!
----
 As we continue to develop and deploy LLMs in various applications, understanding their limitations becomes more and more important. This blind spot might seem amusing at first, but it's a look into a more broader challenge: how do we ensure AI systems can properly interpret and understand information in all its forms?
 
 Until we solve this, we might need to be a bit more careful about what we assume these models can and can't do. And maybe, just maybe, we should keep our ASCII art appreciation societies human-only for now. After all, we need something to feel superior about when the AIs eventually take over everything else.
