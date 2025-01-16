@@ -1,9 +1,9 @@
 ---
 title: "ArtPrompt and Why LLMs Suck at ASCII Art"
 published: 2024-11-28
-description: "LLMs and ASCII"
+description: "Why LLMs being Sucky at ASCII is a Bad Thing (maybe)"
 image: "./blog2_thumbnail.png"
-tags: ["NLP", "Articles", "LLM", "Paper"]
+tags: ["NLP", "Articles", "LLM", "Papers"]
 category: Articles
 draft: false
 ---
