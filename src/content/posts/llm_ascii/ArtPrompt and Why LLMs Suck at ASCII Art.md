@@ -115,9 +115,13 @@ Okay, so - LLMs suck at making ASCII art. Not the end of the world, right? I'm s
 
 Well, perhaps not on the generating end, but I've recently had the chance to read a paper published at ACL 2024 that turned this ASCII art blindspot into a security vulnerability, and it's called ArtPrompt! The researchers discovered that because LLMs struggle to properly interpret ASCII art, they could use it to bypass security filters and prompt guardrails.
 
-Perhaps the most fascinating aspect of ArtPrompt is an **apparent paradox in the empirical results**: the paper demonstrates that LLMs perform poorly at recognizing ASCII art (with even GPT-4 achieving only 25.19% accuracy on single-character recognition), yet the same models reliably generate harmful content when ASCII art is used to bypass safety measures (achieving success rates up to 76% on some models). 
+Perhaps the most fascinating aspect of ArtPrompt is an **apparent paradox in the empirical results**: the paper demonstrates that LLMs perform poorly at recognizing ASCII art (with even GPT-4 achieving only 25.19% accuracy on single-character recognition), yet the same models reliably generate harmful content (basically, content deemed illegal, unethical, dangerous, etc.) when ASCII art is used to bypass safety measures (achieving success rates up to 76% on some models). 
 
 While the paper doesn't definitively explain this mechanism, we can speculate about what might be happening: safety alignment mechanisms could be operating primarily at a surface pattern-matching level, while the model's broader language understanding works at a deeper semantic level. This would create a disconnect where ASCII art bypasses the pattern-matching safety filters while the overall context still guides response generation. This interpretation, while not proven in the paper, would align with their experimental results showing both poor ASCII recognition and successful safety bypasses. It would also explain why fine-tuning models to better recognize ASCII art (improving accuracy to 71.54%) helps prevent the attack, as demonstrated in their experiments.
+
+*More about AI Alignment at:*
+- https://www.datacamp.com/blog/ai-alignment
+- https://research.ibm.com/blog/what-is-alignment-ai
 
 ![image](./blog2_cloud.png)
 *yes, my request is highly illegal, but what if i ask you nicely (with pictures)!?*
@@ -162,6 +166,10 @@ Their experimental results against existing defense mechanisms showed (this is a
 | Perplexity Detection | 78% (GPT-3.5)       |
 | Token Retokenization | 86% (Gemini)        |
 | Paraphrase Defense   | 52% (Claude)        |
+
+If you want to learn more about Perplexity, Retokenization, Paraphase:
+- https://arxiv.org/abs/2309.00614
+- https://arxiv.org/abs/1910.13267
 
 Unlike other jailbreak methods such as GCG that require hundreds of optimization iterations, ArtPrompt requires only a single pass.
 
