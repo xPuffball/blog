@@ -164,6 +164,9 @@ Their experimental results against existing defense mechanisms showed (this is a
 | Paraphrase Defense   | 52% (Claude)        |
 
 Unlike other jailbreak methods such as GCG that require hundreds of optimization iterations, ArtPrompt requires only a single pass.
+
+Also particularly interesting was their finding on how font selection impacts attack success. Using their VITC benchmark, they identified that certain fonts consistently produced lower recognition accuracy across all tested LLMs, making them ideal for attacks. The paper demonstrated this with their "head-set" and "tail-set" font configurations, where carefully selected fonts could push success rates up to 76% on some models.
+
 ### An Example
 We'll now look at a sanitized example of how this attack works in practice. Consider these two prompts:
 
