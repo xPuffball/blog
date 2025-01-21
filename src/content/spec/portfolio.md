@@ -1,8 +1,12 @@
 # Portfolio
 
+---
+
 ## Codecracker
 
 ![image](../posts/codecracker/blog1_grid.png)
+
+*winning not guaranteed, immunity from your friends' disappointment also not guaranteed*
 
 <!-- 
 <figure>
@@ -21,6 +25,8 @@ Live Demo Here: [Codecracker](https://codecracker-seven.vercel.app/)
 ## Toxicity Classifier
 
 ![image](./portfolio_imgs/toxic.png)
+
+*blurred for your eyes*
 
 <!-- <figure>
 <img src="./portfolio_imgs/toxic.png" width="50%" height="50%"/>
