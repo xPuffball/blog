@@ -22,8 +22,9 @@ const isLocal = !(
 )
 const isPublic = src.startsWith('/')
 
-// TODO temporary workaround for images dynamic import
-// https://github.com/withastro/astro/issues/3373
+// Check if this is a portfolio image based on alt text
+const isPortfolioImage = alt?.startsWith('portfolio-image')
+
 let img: ImageMetadata | undefined
 if (isLocal) {
   const files = import.meta.glob<ImageMetadata>('../../**', {
@@ -42,12 +43,14 @@ if (isLocal) {
   }
 }
 
-const imageClass = 'w-full h-full object-cover'
+// Modify imageClass based on whether it's a portfolio image
+const baseImageClass = 'object-cover'
+const portfolioImageClass = 'max-w-md w-full h-auto mx-auto' // adjust max-w-md to your desired size
+const imageClass = `${baseImageClass} ${isPortfolioImage ? portfolioImageClass : 'w-full h-full'}`
 const imageStyle = `object-position: ${position}`
 ---
-<div id={id} class:list={[className, 'overflow-hidden relative']}>
+<div id={id} class:list={[className, 'overflow-hidden relative', isPortfolioImage ? 'max-w-md mx-auto' : '']}>
     <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>
     {isLocal && img && <Image src={img} alt={alt || ""} class={imageClass} style={imageStyle}/>}
     {!isLocal && <img src={isPublic ? url(src) : src} alt={alt || ""} class={imageClass} style={imageStyle}/>}
 </div>
-
