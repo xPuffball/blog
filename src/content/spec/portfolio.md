@@ -2,10 +2,13 @@
 
 ## Codecracker
 
+![image](../posts/codecracker/blog1_grid.png)
+
+<!-- 
 <figure>
 <img src="../posts/codecracker/blog1_grid.png" width="50%" height="50%"/>
 <figcaption>winning not guaranteed, immunity from your friends' disappointment also not guaranteed</figcaption>
-</figure>
+</figure> -->
 
 **Codecracker** is a codenames solver that uses word embeddings to find the closest word vectors to a set of words to provide
 clue words for a codemaster. It's a... little janky, but future improvements using more sophisticated approaches are planned!
