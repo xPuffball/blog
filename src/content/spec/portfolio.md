@@ -24,7 +24,7 @@ Live Demo Here: [Codecracker](https://codecracker-seven.vercel.app/)
 
 **Toxicity Classifer** is a classical machine learning project that uses multiple ML and DL models to classify comments into different categories of toxicity. The dataset is available online, and it was a part of Jigsaw & Google's toxic comments classification challenge.
 
-[Toxic Comments Classification - Slides](../../../public/jigsaw_slides.pdf)
+[Toxic Comments Classification - Slides](/jigsaw_slides.pdf)
 
 [Toxic Comments Classification Notebook (Warning: Extreme Language as Part of the Project)](../../../public/jigsaw.pdf)
 
