@@ -61,7 +61,7 @@ The **Black Friday Sentiment** project is a project that aimed to analyze genera
 
 The **Uber Ridership Visualization** is a project I used to get familiar and learn about **Tableau**. It uses public Uber ridership data to visualize ridership patterns in the New York City area as I try to find patterns of how people take uber rides in different weather conditions and times of week/day!
 
-[Uber Ridership Slides](/public/uber_ridership.pdf)
+[Uber Ridership Slides](/uber_ridership.pdf)
 
 ---
 
