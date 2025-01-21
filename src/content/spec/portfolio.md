@@ -3,7 +3,7 @@
 ## Codecracker
 
 <figure>
-<img src="/content/posts/codecracker/blog1_grid.png" width="50%" height="50%"/>
+<img src="../posts/codecracker/blog1_grid.png" width="50%" height="50%"/>
 <figcaption>winning not guaranteed, immunity from your friends' disappointment also not guaranteed</figcaption>
 </figure>
 
@@ -18,7 +18,7 @@ Live Demo Here: [Codecracker](https://codecracker-seven.vercel.app/)
 ## Toxicity Classifier
 
 <figure>
-<img src="/content/spec/portfolio_imgs/toxic.png" width="50%" height="50%"/>
+<img src="./portfolio_imgs/toxic.png" width="50%" height="50%"/>
 <figcaption>blurred for your eyes</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ Live Demo Here: [Codecracker](https://codecracker-seven.vercel.app/)
 
 ## Black Friday Sentiment Project (Big Data)
 
-<img src="/content/spec/portfolio_imgs/black_friday.png" width="50%" height="50%"/>
+<img src="./portfolio_imgs/black_friday.png" width="50%" height="50%"/>
 
 The **Black Friday Sentiment** project is a project that aimed to analyze general sentiment around black friday using tweets! I learnt a lot about Apache Spark, and working with big data overall! The tweet dataset I worked with had 1 million+ rows overall, and it was a lot of fun learning how to use Databricks clusters and Spark to parallelize operations. It used **AWS Athena** and **QuickSight** to pull from a S3 bucket and create a dashboard.
 
@@ -42,7 +42,7 @@ The **Black Friday Sentiment** project is a project that aimed to analyze genera
 
 ## Uber Ridership Visualization
 
-<img src="/content/spec/portfolio_imgs/ridership.png" width="50%" height="50%"/>
+<img src="./portfolio_imgs/ridership.png" width="50%" height="50%"/>
 
 The **Uber Ridership Visualization** is a project I used to get familiar and learn about **Tableau**. It uses public Uber ridership data to visualize ridership patterns in the New York City area as I try to find patterns of how people take uber rides in different weather conditions and times of week/day!
 
