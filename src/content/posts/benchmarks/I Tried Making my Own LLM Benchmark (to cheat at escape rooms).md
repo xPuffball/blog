@@ -203,7 +203,7 @@ So after some refilling of API balances, I was ready to go. I ran the benchmark,
 
 **The Challenge:** A can is stuck in a hole that almost exactly matches its volume. A combination is written on the bottom of the can that needs to be retrieved.
 
-![alt text](./blog3_jar-1.JPG)
+![alt text](./blog3_jar.JPG)
 *the inspiration*
 
 ```
