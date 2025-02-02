@@ -310,6 +310,8 @@ But it eventually does get the solution. So... not the worst.
 
 Here's a fancy radar graph of the results!
 
+We see that both models are pretty similar in their capabilities, with GPT-4 being slightly better in physical understanding and solution path, and Haiku being slightly better in red herring handling. Overall though, both models kind of suck. Dang.
+
 ![image](./blog3_capabilities_radar.png)
 
 ## LLM-as-a-Judge
