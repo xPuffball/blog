@@ -1,6 +1,6 @@
 ---
-title: "I Tried Making my Own LLM Benchmark (to cheat at escape rooms).md"
-published: 2024-02-01
+title: "I Tried Making my Own LLM Benchmark (to cheat at escape rooms)."
+published: 2025-02-01
 description: "How/why we benchmark LLMs and make our own sucky ones"
 image: "./blog3_thumbnail.png"
 tags: ["Benchmarks", "Articles", "LLM", "Papers"]
