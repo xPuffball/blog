@@ -72,7 +72,7 @@ SuperGLUE's core innovation is its task selection methodology. The researchers c
 
 This resulted in eight tasks (I've simplified the table from the document here, it's a little less readable but you should get the sense of what the questions are asking):
 
-![image](./blog3_glue.JPG)
+![image](./blog3_glue.png)
 
 What makes these tasks special is their diversity in format. Unlike GLUE's focus on sentence classification, SuperGLUE includes coreference resolution, reading comprehension, and more com plex reasoning tasks. Each task measures different aspects of language understanding while maintaining clear, quantifiable metrics.
 
