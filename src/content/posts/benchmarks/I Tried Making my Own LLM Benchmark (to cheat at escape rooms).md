@@ -56,8 +56,11 @@ When they compared local measurements to Leetcode's metrics, they found only a 0
 Three major issues emerged that challenge Leetcode's viability as a benchmark:
 
 **Data Contamination**: Using public problems risks LLMs having seen the solutions during training. The researchers had to use only problems from 2023 to mitigate this.
+
 **Platform Instability**: Leetcode's metrics drift over time - memory measurements showed a -0.24 correlation with test date. This makes reproducible benchmarking nearly impossible.
+
 **Measurement Reliability:** The weak correlation between local and platform measurements raises questions about what we're actually testing.
+
 ### What It Means for LLM Benchmarking
 
 This study doesn't just critique Leetcode - it highlights what we need in a code generation benchmark: reproducible measurements, reliable performance metrics, and guaranteed training-test separation. Until we have platforms built specifically for this purpose, we need to be extremely cautious about using competition platforms as benchmarks.
