@@ -1,14 +1,12 @@
 ---
 title: "I Attended NVIDIA's Lecture to Find NeMo (Guardrails)"
-published: 2024-11-28
+published: 2025-02-23
 description: "Let's maybe not gaslight the AI..."
 image: "./blog4_thumbnail.png"
 tags: ["NLP", "Articles", "LLM", "Papers"]
 category: Articles
 draft: false
 ---
-
-![[Copy of rigorous llm benchmarks.png]]
 
 Around a week ago (or it was a week ago when I started writing this article, it has since been several unproductive weeks...), Chris Parisien and Griffin Lacey, Research Manager and Solutions Architect at NVIDIA respectively (with brains at least three times the size of my own), came to my university to give a lecture and workshop about **NeMo guardrails,** an open-source, external approach to LLM security - and I want to tell you all about it as well.
 
@@ -251,7 +249,9 @@ With a little bit of leniency, the LLM finally had the freedom to say hello. Now
 This experience taught us that **Guardrails can be a little bit too good at its job sometimes** - with no contextual awareness unless explicitly programmed.
 
 So clearly...
+
 🔹 **Too strict** → The AI becomes frustrating and unhelpful.  
+
 🔹 **Too loose** → The AI can be manipulated into responding unsafely.
 
 Achieving the right balance is key. A good Guardrails implementation shouldn't feel like a security system - it should feel like an AI that "knows its role" naturally, and smoothly directs you to the topics at hand, rather than doing the digital equivalent of shoving you out of the club violently.
@@ -307,6 +307,7 @@ Modularity in itself is how we can future-proof security. Security, whether trad
 ### Want to Try Guardrails in Your Own Projects?
 ---
 🔗 **NVIDIA NeMo Guardrails:** https://docs.nvidia.com/nemo/guardrails/introduction.html
+
 🔗 **GitHub Repository:** https://github.com/NVIDIA/NeMo-Guardrails
 
 [1] Rebedea, T., Dinu, R., Sreedhar, M., Parisien, C., & Cohen, J. (2023). _NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails._ NVIDIA. arXiv preprint arXiv:2310.10501. [https://arxiv.org/abs/2310.10501](https://arxiv.org/abs/2310.10501)
