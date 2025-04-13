@@ -1,6 +1,20 @@
 # Portfolio
 
 ---
+## vcdash
+
+![image](./portfolio_imgs/vcdash.jpeg)
+
+*all these vc investments and not one for me?*
+
+**vcdash** is a dashboard, mindmap tool, and LLM tool all fused into one that dynamically creates both text and charts on a flexible background.
+It was built for CxC 2025 and won third place for the RunQL challenge! 
+
+Check out the devpost: [Devpost](https://devpost.com/software/vcdash)
+
+::github{repo="https://github.com/xPuffball/vc_dash"}
+
+---
 
 ## Codecracker
 
