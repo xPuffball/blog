@@ -12,7 +12,7 @@ It was built for CxC 2025 and won third place for the RunQL challenge!
 
 Check out the devpost: [Devpost](https://devpost.com/software/vcdash)
 
-::github{repo="https://github.com/xPuffball/vc_dash"}
+::github{repo="xpuffball/vc_dash"}
 
 ---
 
