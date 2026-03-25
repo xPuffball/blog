@@ -1,5 +1,5 @@
 ---
-title: "How to Lie with Statistics with your Robot best Friend.md"
+title: "How to Lie with Statistics with your Robot best Friend"
 published: 2026-03-25
 description: "+ p-hacking and is it bad?"
 image: "./blog5_thumbnail.png"
