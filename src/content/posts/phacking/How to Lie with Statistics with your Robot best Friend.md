@@ -8,7 +8,6 @@ category: Articles
 draft: false
 ---
 
-
 Performing traditional statistical analysis is often compared to navigating a "Garden of Forking Paths" (Gelman and Loken). It's a term that helps (hopefully) visualize the countless number of analytical choices researchers must make during an experiment, and how seemingly insignificant "turns" (like which variables to control for, which outliers to remove...) can have researchers end up at completely different conclusions. 
 
 ![image](./mich.png)
